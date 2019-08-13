@@ -513,6 +513,8 @@ export class DocumentParser {
             switch (c.localName) {
                 case "t":
                     result.text = c.textContent;//.replace(" ", "\u00A0"); // TODO
+                    console.log(c)
+                    result.id = c.id
                     break;
 
                 case "br":

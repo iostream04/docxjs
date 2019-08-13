@@ -157,7 +157,7 @@ export class HtmlRenderer {
             }
 
             if(props.columns && props.columns.numberOfColumns) {
-                bodyElement.style.columnCount = props.columns.numberOfColumns;
+                bodyElement.style.columnCount = String(props.columns.numberOfColumns);
                 bodyElement.style.columnGap = this.renderLength(props.columns.space);
 
                 if(props.columns.separator) {

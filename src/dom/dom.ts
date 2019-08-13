@@ -34,6 +34,7 @@ export interface OpenXmlElement {
     style?: IDomStyleValues;
     className?: string;
     parent?: OpenXmlElement;
+    t_id?: string;
 }
 
 export interface DocxTab {
